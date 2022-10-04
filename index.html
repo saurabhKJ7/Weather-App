@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+      
+   
+      
+<video autoplay muted loop id="myVideo">
+  <source src="https://player.vimeo.com/external/586575016.hd.mp4?s=2c09626de3ecdcaf9aa678942e873f2c3f310201&profile_id=174" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div id="niv">
+  <h2>WEATHER REPORT</h2>
+  <input type="search" name="" id="city" placeholder="city name" />
+
+  <button onclick="getData()">Search Any Location Weather</button>
+  <button onclick="getData2()">Current Location Weather</button>
+
+</div>
+   
+
+    <div id="temp"></div>
+
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          width="400"
+          height="400"
+          id="gmap_canvas"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="index.js"></script>
